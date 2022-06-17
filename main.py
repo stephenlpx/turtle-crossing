@@ -26,6 +26,7 @@ while game_is_on:
 
     for c in car.all_cars:
         if c.distance(player) < 20:
+            sb.game_over()
             game_is_on = False
     #when player makes it to the end, reset position and increase the speed of the cars
     if player.ycor() > 280:
